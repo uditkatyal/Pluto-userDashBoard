@@ -32,6 +32,9 @@
       <link rel="stylesheet" href="css/custom.css" />
      
       <script src="https://kit.fontawesome.com/96840cacb7.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -310,17 +313,72 @@ a
                                     <div>
 
                                    
-                                     <div class="help-head"><br><br>
+                                     <!-- <div class="help-head"><br><br> -->
                                         
-                                            <img src="images/logo/logo.png" height="40px" width="40px">
+                                       <img src="images/logo/logo.png" height="40px" width="40px">
                                         <br><br>
                                         <div class="help_line">
                                           <p>How can we help you?</p>
                                         </div>
                                         
                                         <br>
-                                      <input type="text" placeholder="Describe your issue"><br>
-                                     </div>
+                                        <div style="display:flex; flex-direction: column; padding: 0 20px; width: 50%;">
+                                           <label>Describe Your Issue Details</label>
+                                          <input type="text" placeholder="Describe "><br>
+                                       </div>
+                                       <div style="width: 40%;display: flex; align-items: center;justify-content: flex-start;padding: 0 20px" >
+                                          <span style="font-weight: bold; margin-right: 20px">related to</span>
+                                             <div class="dropdown">
+                                               <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Modules
+                                               <!-- <span class="caret"></span> -->
+                                             </button>
+                                               <ul  class="dropdown-menu">
+                                                 <li><a tabindex="-1" href="#">Enterprise Setup</a></li>
+                                                 <li><a tabindex="-1" href="#">Compliance Management</a></li>
+                                                 <li><a tabindex="-1" href="#">Marketing And Sales</a></li>
+                                                 <li><a tabindex="-1" href="#">Add ons</a></li>
+                                                 <li><a tabindex="-1" href="#">Report</a></li>
+                                                 <li><a tabindex="-1" href="#">Assessment</a></li>
+                                                 <li><a tabindex="-1" href="#">Analytics</a></li>
+                                                 <li class="dropdown-submenu">
+                                                   <a class="test" tabindex="-1" href="#">Financial Management<span class="caret"></span></a>
+                                                   <ul class="dropdown-menu">
+                                                     <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                     <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                     <li class="dropdown-submenu">
+                                                       <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                                       <ul class="dropdown-menu">
+                                                         <li><a href="#">3rd level dropdown</a></li>
+                                                         <li><a href="#">3rd level dropdown</a></li>
+                                                       </ul>
+                                                     </li>
+                                                   </ul>
+                                                 </li>
+                                               </ul>
+                                             </div>
+                                           
+                                          
+
+                                          <!-- <select style="width: 30%; margin-left :1rem">
+                                             <option value="Modules">Enterprise Setup</option>
+                                             <option value="Modules">Compliance Management</option>
+                                             <option value="Modules">Marketing And Sales</option>
+                                             <option value="Modules">Add ons</option>
+                                             <option value="Modules">Reports</option>
+                                             <option value="Modules">Assessment</option>
+                                             <option value="Modules">Analytics</option>
+                                             <option value="Modules">Feedback</option>
+                                             <option value="Modules">Financial Management</option>
+                                          </select> -->
+                                       </div>
+
+                                       <div class="two-btn" style="width: 50%; display: flex; justify-content: space-between; margin-top: 2rem; padding: 0 20px;" >
+                                          <button type="button" class="btn btnSubmit" style="padding : 5px 20px;background-color: rgb(238, 120, 41); color: white;">SUBMIT</button>
+                                          <button style="padding : 5px 20px;"type="button" class ="btn btn-primary">RESET</button>
+                                       </div>
+                                       
+                                        
+                                     <!-- </div> -->
                                    
                                  </div>
                               </div>
@@ -340,7 +398,7 @@ a
                   <div class="product-card">
                      <div class="badge">Reach to us</div>
                      <div class="product-tumb">
-                        <img src="images/logo/logo.png" alt="">
+                        <img style="width:50%" src="images/logo/logo.png" alt="">
                      </div>
                      <div class="product-details">
                         <span class="product-catagory">Contact us</span>
@@ -384,5 +442,15 @@ a
       <!-- custom js -->
       <script src="js/chart_custom_style1.js"></script>
       <script src="js/custom.js"></script>
+<!-- DROPDOWN SCRIPT -->
+      <script>
+         $(document).ready(function(){
+           $('.dropdown-submenu a.test').on("click", function(e){
+             $(this).next('ul').toggle();
+             e.stopPropagation();
+             e.preventDefault();
+           });
+         });
+         </script>
    </body>
 </html>
