@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("./assets/login-bg.jfif");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+input :focus {
+  box-shadow: 0 0 10px rgba(39, 179, 197, 0.2);
+  /* box-shadow: 0 0 10px rgba(0, 0, 255, 0.2); */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh auto;
+  max-width: 950px;
+  background-color: white;
+  box-shadow: 10px rgb(42, 42, 42);
+  border-radius: 7px;
+  padding: 1em;
+}
+
+.heading {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #b6b6b6; */
+  align-items: center;
+  padding: 1em 0;
+  border-radius: 10px;
+}
+
+/* --------STEP ----------*/
+
+.stepper-wrapper {
+  align-items: center;
+  width: 90%;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 0.7em;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: white;
+}
+
+.step-name {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.active .step-counter {
+  background-color: rgb(55, 201, 18);
+}
+
+.stepper-item.completed .step-counter {
+  background-color: rgb(253, 97, 40);
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid rgb(253, 97, 40);
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+/* ----- STEP END -------- */
+
+.heading h2 {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.heading p {
+  margin: 0.5em 1em;
+}
+
+.inputs h2 {
+  /* margintop: 1em; */
+  align-self: flex-start;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0.1em 1.2em;
+}
+
+input {
+  padding: 0.5em;
+}
+
+.inputs:focus {
+  outline: none;
+}
+.persona {
+  width: 100%;
+}
+
+.subs {
+  width: 100%;
+}
+
+.support {
+  width: 50%;
+}
+
+.column2 {
+  width: 100%;
+  display: flex;
+  margin: 1em 0;
+  justify-content: space-between;
+}
+
+.inputs li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 350px;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  list-style: none;
+  margin-left: 1.1em;
+}
+
+.inputs li h5 {
+  color: #5c5c5c;
+  margin: 1em 0;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.inputs li h5 b {
+  color: red;
+}
+
+.inputs li input {
+  width: 100%;
+  padding: -3.6em;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(
+    47deg,
+    rgb(241, 138, 29) 0px,
+    rgb(243, 84, 97) 100%
+  );
+  box-shadow: rgb(242 147 125 / 60%) 0px 8px 29px 0px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  height: auto;
+  width: 150px;
+  align-self: center;
+  margin-top: 0px;
+  border: 0px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  margin: 20px 0px 0px;
+}
+
+.btn2 {
+  background-color: rgb(4, 99, 161);
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  height: auto;
+  width: 150px;
+  align-self: center;
+  margin-top: auto;
+  border: 0px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  margin: 20px 0px 0px;
+}
+@media (min-width: 315px) and (max-width: 768px) {
+  .inputs {
+    width: 80%;
+  }
+
+  .inputs h2 {
+    align-self: center;
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0.1em 1.1em;
+  }
+
+  .step-name {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  .column2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputs li {
+    width: 80%;
+    /* padding-left: 1em; */
+    padding-right: 1em;
+    padding-top: 1em;
+    margin: auto;
+  }
+
+  .inputs li h5 {
+    margin: 0.7em 0;
+    font-size: 0.85em;
+    font-weight: 500;
+  }
+
+  .inputs li input {
+    /* width: 90%; */
+    padding: -3.6em;
+  }
+
+  .support {
+    width: 100%;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 426px) {
+  .inputs {
+    width: 90%;
+  }
+
+  .inputs li {
+    width: 80%;
+    padding-left: 0;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+
+  .inputs li h5 {
+    margin: 0.7em 0;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+
+  .inputs li {
+    width: 80%;
+    /* padding-left: 1em; */
+    padding-right: 1em;
+    padding-top: 1em;
+    margin: auto;
+  }
+
+  ::placeholder {
+    font-size: 0.8em;
+  }
+}

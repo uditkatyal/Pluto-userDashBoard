@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Pluto - Responsive Bootstrap Admin Panel Templates</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="style2.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/custom.css" />
+      <!-- calendar file css -->
+      <link rel="stylesheet" href="js/semantic.min.css" />
+    <link rel="stylesheet" href="payment.css" />
+
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body class="inner_page profile_page">
+      <div class="full_container">
+         <div class="inner_container">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+               <div class="sidebar_blog_1">
+                  <div class="sidebar-header">
+                     <div class="logo_section">
+                        <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/logo_icon.png" alt="#" /></a>
+                     </div>
+                  </div>
+                  <div class="sidebar_user_info">
+                     <div class="icon_setting"></div>
+                     <div class="user_profle_side">
+                        <div class="user_img"><img class="img-responsive" src="images/layout_img/dp.jpeg" alt="#" /></div>
+                        <div class="user_info">
+                           <h6>John David</h6>
+                           <p><span class="online_animation"></span> Online</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="sidebar_blog_2">
+                  
+                  <ul class="list-unstyled components">
+                     <li class="active">
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                        
+                     </li>
+                     <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Enterprise Setup</span></a></li>
+                     <li>
+                        <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Compliance Management</span></a>
+                        <ul class="collapse list-unstyled" id="element">
+                           <li><a href="general_elements.html">> <span>General Elements</span></a></li>
+                           <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
+                           <li><a href="icons.html">> <span>Icons</span></a></li>
+                           <li><a href="invoice.html">> <span>Invoice</span></a></li>
+                        </ul>
+                     </li>
+                     <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span> Profile Building & Sales</span></a></li>
+                     <li>
+                        <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group blue2_color"></i> <span>Financial Management</span></a>
+                        <ul class="collapse list-unstyled" id="apps">
+                           <li><a href="email.html">> <span>Email</span></a></li>
+                           <li><a href="calendar.html">> <span>Calendar</span></a></li>
+                           <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
+                        </ul>
+                     </li>
+                    
+                    
+                      <li><a href="settings.html"><i class="fa fa-cog yellow_color"></i><span>Exit</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+               <!-- topbar -->
+               <div class="topbar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full">
+                        <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
+                        <div class="logo_section">
+                           <a href="index.html"><img class="img-responsive" src="images/logo/logo.png" alt="#" /></a>
+                        </div>
+                        <div class="right_topbar">
+                           <div class="icon_info">
+                              <ul>
+                                 
+                                 <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                                
+                              </ul>
+                              <ul class="user_profile_dd">
+                                 <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="images/layout_img/user_img.jpg" alt="#" /><span class="name_user">John David</span></a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="profile.html">My Profile</a>
+                                       <a class="dropdown-item" href="settings.html">Settings</a>
+                                       <a class="dropdown-item" href="help.html">Help</a>
+                                       <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+               <!-- end topbar -->
+               <!-- dashboard inner -->
+               <div class="midde_cont">
+                  <div class="container-fluid">
+                     <div class="row column_title">
+                        <div class="col-md-12">
+                           <div class="page_title">
+                              <h2>Profile</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- row -->
+                     <div class="row column1">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                           <div class="white_shd full margin_bottom_30">
+                              <div class="full graph_head">
+                                 <div class="heading1 margin_0">
+                                    <h2>User profile</h2>
+                                 </div>
+                              </div>
+                              <div class="full price_table padding_infor_info">
+                                 <div class="row">
+                                    <!-- user profile section --> 
+                                    <!-- profile image -->
+                                    <div class="col-lg-12">
+                                       <div class="full dis_flex center_text">
+                                          <div class="profile_img"><img width="180" class="rounded-circle" src="images/layout_img/dp.jpeg" alt="#" /></div>
+                                          <div class="profile_contant">
+                                             <div class="contact_inner">
+                                                <h3>John Smith</h3>
+                                                <p><strong>About: </strong>UI Developer</p>
+                                                <ul class="list-unstyled">
+                                                   <li><i class="fa fa-envelope-o"></i> : abcd@gmail.com</li>
+                                                   <li><i class="fa fa-phone"></i> : 987 654 3210</li>
+                                                </ul>
+                                             </div>
+                                             <div class="user_progress_bar">
+                                                <div class="progress_bar">
+                                                   <!-- Skill Bars -->
+                                                   <span class="skill" style="width:85%;">Date of Birth </span>                   
+                                                   
+                                                      <p>14/09/1992</p>
+                                                  
+                                                   <span class="skill" style="width:78%;">Address </span>   
+                                                   <p>Delhi<br> PIN:123456
+                                                   </p>
+                                                   </div>
+                                                   <span class="skill" style="width:47%;">Country <span class="info_valume"></span></span>
+                                                   <p>India
+                                                   </p>
+                                                   </div>
+                                                   <span class="skill" style="width:65%;">Highest Education Qualification </span>
+                                                   <div>
+                                                      <p>MCA
+                                                      </p>
+                                                   </div>
+                                                   
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- profile contant section -->
+
+                                       <!-- BUTTONS and MODALS -->
+                                       <div class ="btn-profile">
+                                          <button style="color: white" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">complete your profile</button>
+                                          <button type="button" class="btn btn-success" >edit your profile</button>
+                                          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button> -->
+                                          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+                                       </div>
+                                      <div  class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                       <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            
+                                          <div class="inputs">
+                                       <!-- <div class="heading">
+                              
+                                          <div class="stepper-wrapper">
+                                             <div class="stepper-item completed">
+                                                   <div class="step-counter">1</div>
+                                                   <div class="step-name">Personal</div>
+                                             </div>
+                                             <div class="stepper-item active">
+                                                   <div class="step-counter">2</div>
+                                                   <div class="step-name">Startup</div>
+                                             </div>
+                                             <div class="stepper-item">
+                                                   <div class="step-counter">3</div>
+                                                   <div class="step-name">Support & Payment</div>
+                                             </div>
+                                          </div>
+                                          
+                                        </div> -->
+                                                <div class="column2">
+                                                   <div class="persona">
+                                                      
+                                                         <b><h2>Personal Details</h2></b> 
+                                                   
+                                                      
+                                                      <li>
+                                                            <h5>DATE OF BIRTH<b> *</b></h5>
+                                                            <input type="date" placeholder="dd-mm-yyyy" style="padding: 0.5em;">
+                                                      </li>
+                                                      <li>
+                                                            <h5>ADDRESS<b> *</b></h5>
+                                                         <textarea name="comment">
+                                                               </textarea>
+                                                      </li>
+                                                      <li>
+                                                            <h5>COUNTRY<b> *</b></h5>
+                                                            <select >
+                                                               <option>select</option>
+                                                               <option>select</option>
+                                                               <option>select</option>
+                                                            </select>
+                                                      </li>
+                                                      <li>
+                                                            <h5>STATE<b> *</b></h5>
+                                                            <select>
+                                                               <option>select</option>
+                                                               <option>select</option>
+                                                               <option>select</option>
+                                                            </select>
+                                                      </li>
+                                                      <li>
+                                                            <h5>CITY<b> *</b></h5>
+                                                            <select>
+                                                               <option>select</option>
+                                                               <option>select</option>
+                                                               <option>select</option>
+                                                            </select>
+                                                      </li>
+                                                      <li>
+                                                            <h5>HIGHEST EDUCATIONAL QUALIFICATION<b> *</b></h5>
+                                                            <input type="text" placeholder="" style="padding: 0.5em;">
+                                                      </li>
+                                                      <li>
+                                                            <h5>PROFESSIONAL EXPERIENCE(IN YEARS)<b> *</b></h5>
+                                                            <input type="text" placeholder="" style="padding: 0.5em;">
+                                                      </li>
+                                                   </div>
+                                       
+                                                   
+                                                </div>
+                                       
+                                                <div class="button">
+                                                <a> <button type="button" class="btn1" data-toggle="modal" data-target="#exampleModalNext" data-whatever="@mdo" data-dismiss="modal">NEXT</button></a> 
+                                                <button type="button" class="btn2" ">CANCEL</button>
+                                             </div>         
+                                             </div>
+                                          
+                                           </div>
+
+                                       </div>
+                                       <!-- end user profile section -->
+                                    </div>
+
+                                    <div class="modal fade" id="exampleModalNext" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                       <div class="modal-dialog" role="document">
+                                         <div class="modal-content">
+                                           <div class="modal-header">
+                                             
+                                           </div>
+                                           <div class="inputs">
+                                             <!-- <div class="heading">
+                                     
+                                                 <div class="stepper-wrapper">
+                                                     <div class="stepper-item completed">
+                                                         <div class="step-counter">1</div>
+                                                         <div class="step-name">Personal</div>
+                                                     </div>
+                                                     <div class="stepper-item active">
+                                                         <div class="step-counter">2</div>
+                                                         <div class="step-name">Startup</div>
+                                                     </div>
+                                                     <div class="stepper-item">
+                                                         <div class="step-counter">3</div>
+                                                         <div class="step-name">Support & Payment</div>
+                                                     </div>
+                                                 </div>
+                                                 
+                                             </div> -->
+                                             <div class="column2">
+                                                 <div class="persona">
+                                                     <h2 class="hello">Proposed Startup Details</h2>
+                                                     <li>
+                                                         <h5>Have you proposed your company?<b> *</b></h5>
+                                                         <select id="clicked-yes">
+                                                            <option  >Yes</option>
+                                                            <option class="clicked-no-1" >NO</option>
+                                                             <option>select</option>
+                                                         </select>
+                                                     </li>
+                                                     <ul class="active-yes">
+                                                     <li>
+                                                         <h5>What is the legal status of the entity you have formed<b> *</b></h5>
+                                                         <select>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                         </select>
+                                                     </li>
+                                                     <li>
+                                                         <h5>Address with name of city and State<b> *</b></h5>
+                                                         <input type="text" placeholder="">
+                                                     </li>
+                                                     <li>
+                                                         <h5>Establishment Year<b> *</b></h5>
+                                                         <select>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                         </select>
+                                                     </li>
+                                                     <li>
+                                                         <h5>Website<b> *</b></h5>
+                                                         <input type="text" placeholder="">
+                                                     </li>
+                                                   </ul>
+                                                 </div>
+                                     
+                                                 <div class="subs">
+                                                   
+                                                     <li>
+                                                         <h5>Stage of startup<b> *</b></h5>
+                                                         <select>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                         </select>
+                                                     <li>
+                                                         <h5>PRIMARY CUSTOMER OF YOUR PRODUCT/SERVICE<b> *</b></h5>
+                                                         <input type="text">
+                                                     </li>
+                                                     <li>
+                                                         <h5>EXPLAIN USP(UNIQUE SELLING PROPOSITION)?<b> *</b></h5>
+                                                         <input type="text" placeholder="">
+                                                     </li>
+                                                     <li>
+                                                         <h5>PROPOSED STARTUP NAME<b> *</b></h5>
+                                                         <input type="text" placeholder="Select Option">
+                                                     </li>
+                                                     <li>
+                                                         <h5>PRODUCT/SERVICE SUMMARY<b> *</b></h5>
+                                                         <textarea name="comment">
+                                                         </textarea>
+                                                     </li>
+                                                     <li>
+                                                         <h5>BUSINESS SEGMENT<b> *</b></h5>
+                                                         <select>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                             <option>select</option>
+                                                         </select>
+                                                     </li>
+                                                 </div>
+                                     
+                                             </div>
+                                             
+                                             <div class="button">
+                                                 <a> <button type="button" class="btn1" data-toggle="modal" data-target="#exampleModalPayment" data-dismiss="modal" data-whatever="@mdo">NEXT</button></a> 
+                                                   <button type="button" class="btn2">RESET</button>
+                                               </div>
+                                             </div>  
+                                 </div>
+                               </div>
+                              </div>
+
+
+
+                              <div class="modal fade" id="exampleModalPayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                 <div class="modal-dialog" role="document">
+                                   <div class="modal-content">
+                                     <div class="modal-header">
+                                       
+                                     </div>
+                                     <div class="inputs">
+                                       <!-- <div class="heading">
+                           
+                                           <div class="stepper-wrapper">
+                                               <div class="stepper-item completed">
+                                                   <div class="step-counter">1</div>
+                                                   <div class="step-name">Personal</div>
+                                               </div>
+                                               <div class="stepper-item active">
+                                                   <div class="step-counter">2</div>
+                                                   <div class="step-name">Startup</div>
+                                               </div>
+                                               <div class="stepper-item">
+                                                   <div class="step-counter">3</div>
+                                                   <div class="step-name">Support & Payment</div>
+                                               </div>
+                                           </div>
+                                           
+                                       </div> -->
+                                       <div class="column2">
+                                           <!-- <div class="persona"> -->
+                                               
+                                               <!-- <li>
+                                                   <h5>Startup Booster Program<b> *</b></h5>
+                                               <select>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                   </select>
+                                               </li>
+                                               <li>
+                                                   <h5>Do you know about Incutopia ?<b> *</b></h5>
+                                                   <select>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                   </select>
+                                               </li>
+                                               <li>
+                                                   <h5>Have you get proposal over mail and approved :<b> *</b></h5>
+                                                   <select>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                   </select>
+                                               </li> -->
+                                           <!-- </div> -->
+                           
+                                           <div class="subs">
+                                               <b><h2>Subscription and Payment Details</h2></b> 
+                                           
+                                               
+                                               <li>
+                                                   <h5>WHICH PAYMENT TERM YOU HAVE CHOSE?<b> *</b></h5>
+                                                   <select>
+                                                       <option >select</option>
+                                                       <option>select</option>
+                                                       <option>select</option>
+                                                   </select>
+                                               </li>
+                                               <li>
+                                                   <h5>HAVE YOU SUBMITTED FIRST INSTALLMENT?<b> *</b></h5>
+                                               <select>
+                                                   <option>select</option>
+                                                   <option>select</option>
+                                                   <option>select</option>
+                                               </select>
+                                               </li>
+                                               <li>
+                                                   <h5>PLEASE WRITE YOUR PAYMENT TRANSACTION NO<b> *</b></h5>
+                                                   <input type="text" style="padding: 0.4em;">
+                                               </li>
+                                               <li>
+                                                   <h5>PREFERED DATE OR ONLINE MEETING TO START THE PROCESS:<b> *</b></h5>
+                                                   <input type="date"  style="padding: 0.4em;">
+                                               </li>
+                                               
+                                           </div>
+                           
+                                       </div>
+                           
+                                       <div class="column2">
+                                           <div class="support">
+                                               
+                                           </div>
+                           
+                                       </div>
+                           
+                                       
+                                       <button type="button" class="btnSubmit" data-dismiss="modal">SUBMIT</button>
+                                   </div>
+                           </div>
+                         </div>
+                        </div>
+                               
+                              </div>
+                           </div>
+                           <div class="col-md-2"></div>
+                        </div>
+                        <!-- end row -->
+                     </div>
+                     <!-- footer -->
+                     <div class="container-fluid">
+                        <div class="footer">
+                           <p>Copyright © 2018 Designed by html.design. All rights reserved.<br><br>
+                              Distributed By: <a href="https://themewagon.com/">ThemeWagon</a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end dashboard inner -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="js/animate.js"></script>
+      <!-- select country -->
+      <script src="js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="js/Chart.min.js"></script>
+      <script src="js/Chart.bundle.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <!-- calendar file css -->    
+      <script src="js/semantic.min.js"></script>
+     <!-- Profile-toggle- active-yes -->
+     <script src="js/profile_toggle.js"></script>
+
+      <!-- MODAL SCRIPT BOOTSTRAP-->
+      <script>
+                $('#exampleModal').on('show.bs.modal', function (event) {
+               var button = $(event.relatedTarget) // Button that triggered the modal
+               var recipient = button.data('whatever') // Extract info from data-* attributes
+               // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+               // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+               var modal = $(this)
+               modal.find('.modal-title').text('New message to ' + recipient)
+               modal.find('.modal-body input').val(recipient)
+               })
+      </script>
+      <!-- MODAL SCRIPT END -->
+   </body>
+</html>
