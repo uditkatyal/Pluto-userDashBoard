@@ -193,11 +193,11 @@ select {
   justify-content: flex-end;
   max-width: 350px;
   width: 100%;
-  padding-left: 1em;
+  /* padding-left: 1em; */
   padding-right: 1em;
   padding-top: 1em;
   list-style: none;
-  margin-left: 1.1em;
+  /* margin-left: 1.1em; */
 }
 
 .inputs li h5 {

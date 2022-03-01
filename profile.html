@@ -192,14 +192,58 @@
 
                                        <!-- BUTTONS and MODALS -->
                                        <div class ="btn-profile">
-                                          <button style="color: white" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">complete your profile</button>
-                                          <button type="button" class="btn btn-success" >edit your profile</button>
+                                          <button style="color: white;padding: 15px 30px; font-size: 1.2rem" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal123" data-whatever="@mdo">Complete your profile</button>
+                                          <button style="padding: 15px 30px; font-size: 1.2rem"type="button" class="btn btn-success" >Edit your profile</button>
                                           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button> -->
                                           <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
                                        </div>
 
                                        <!-- UPLOAD IMAGE -->
-                                      <div  class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                       <!-- Button trigger modal -->
+                                          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal123"> -->
+                                             <!-- Launch demo modal -->
+                                          <!-- </button> -->
+                                          
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="exampleModal123" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                             <div class="modal-dialog" role="document">
+                                             <div style="width: 600px" class="modal-content">
+                                                <div class="grid-x grid-padding-x">
+                                                   <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell">
+                                                     <!-- <h1>Multiple Image File Upload with Preview</h1> -->
+                                                     <form style="padding: 20px 30px" action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
+                                                       <p>
+                                                         <label for="upload_imgs" class="button hollow">Select Your Image</label>
+                                                         <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" multiple/>
+                                                       <!-- </p> -->
+                                                       <!-- <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div> -->
+                                                       <!-- <p>    -->
+                                                       </p>
+                                                     </form>
+                                                   </div>
+                                                 </div>
+                                                 <!--
+                                                 <label for="exampleFileUpload" class="button">Upload File</label>
+                                                 <input type="file" id="exampleFileUpload" class="show-for-sr">
+                                                 -->
+                                                <!-- <div class="modal-body"> -->
+                                                   ...
+                                                <!-- </div> -->
+                                                <!-- <div class="modal-footer"> -->
+                                                   <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                   <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                   <div style="padding: 20px 30px"class="button">
+                                                      <a> <button type="button" class="btn1" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" data-dismiss="modal">NEXT</button></a> 
+                                                      <button type="button" class="btn2" ">CANCEL</button>
+                                                   </div>
+                                                <!-- </div> -->
+                                             </div>
+                                             </div>
+                                          </div>
+
+
+                                      <div  style="overflow-y: scroll   ;"class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                        <div   class="modal-dialog" role="document">
                                         <div style="width: 600px;"class="modal-content">
                                             
@@ -398,7 +442,7 @@
                               </div>
 
 
-
+<!-- 
                               <div class="modal fade" id="exampleModalPayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                  <div class="modal-dialog" role="document">
                                    <div class="modal-content">
@@ -424,7 +468,7 @@
                                            </div>
                                            
                                        </div> -->
-                                       <div class="column2">
+                                       <!-- <div class="column2"> -->
                                            <!-- <div class="persona"> -->
                                                
                                                <!-- <li>
@@ -453,7 +497,7 @@
                                                </li> -->
                                            <!-- </div> -->
                            
-                                           <div class="subs">
+                                           <!-- <div class="subs">
                                                <b><h2>Subscription and Payment Details</h2></b> 
                                            
                                                
@@ -498,7 +542,7 @@
                                    </div>
                            </div>
                          </div>
-                        </div>
+                        </div> --> -->
                                
                               </div>
                            </div>
