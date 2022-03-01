@@ -3885,3 +3885,6 @@ body {
   max-width: 140px;
   padding: 0.25rem;
 }
+input #file-upload-button {
+  background-color: #0077b5;
+}
